@@ -1,0 +1,1 @@
+SELECT unnest(enum_range(NULL::msp_status_enum)) AS status;

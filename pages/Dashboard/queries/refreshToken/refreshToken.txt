@@ -1,0 +1,3 @@
+{
+  "token": "{{ appsmith.store.jwt }}"
+}

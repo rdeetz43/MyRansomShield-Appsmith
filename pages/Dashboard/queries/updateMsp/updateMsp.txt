@@ -1,0 +1,14 @@
+UPDATE public.msps
+SET msp_status = (
+  SELECT value FROM msp_status_lookup WHERE name = '{{ selMspStatus.selectedOptionValue }}'
+),
+		msp_name = '{{ inpMspName.text }}',
+    msp_contact_name = '{{ inpMspContact.text }}',
+    msp_contact_email = '{{ inpMspEmail.text }}',
+    msp_address = '{{ inpMspAddress.text }}',
+    msp_phone = '{{ inpMspPhone.text }}',
+    msp_notes = '{{ inpMspNotes.text }}',
+		update_path = '{{ inpMspUpdatePath.text }}',
+		latest_version = '{{ inpMspLatestVersion.text }}',
+		msp_id = '{{inpMspId.text}}'
+WHERE id = {{appsmith.store.editRow.id}};

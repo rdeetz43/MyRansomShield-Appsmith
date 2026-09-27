@@ -1,0 +1,11 @@
+{{ 
+  {
+    machine: appsmith.store.editRow.id,
+    payload: {
+      type: "Myransomshield.cleanpc",
+			msgId: "msgbox-" + Math.floor(Date.now()/1000),
+      date: appsmith.store.timerDate,
+			paths: appsmith.store.cleanedTargets
+		}
+  }
+}}

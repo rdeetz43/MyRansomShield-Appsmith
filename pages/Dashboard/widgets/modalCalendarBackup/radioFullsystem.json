@@ -1,0 +1,58 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "defaultOptionValue": "Y",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "a6pbrmcn8y",
+  "label": "",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 23,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 36,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 30,
+  "needsErrorInfo": false,
+  "options": [
+    {
+      "label": "Full-System",
+      "value": "Y"
+    },
+    {
+      "label": "Incremental",
+      "value": "N"
+    }
+  ],
+  "originalBottomRow": 21,
+  "originalTopRow": 15,
+  "parentColumnSpace": 6.9375,
+  "parentId": "sgh1op5fil",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 42,
+  "topRow": 15,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "apsy0lqtqz",
+  "widgetName": "radioFullsystem"
+}

@@ -1,0 +1,3 @@
+SELECT id, site_name
+FROM sites
+WHERE msp_id = {{appsmith.store.currentMsp}};

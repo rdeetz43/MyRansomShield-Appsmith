@@ -1,0 +1,1 @@
+SELECT unnest(enum_range(NULL::machine_type_enum)) AS status;

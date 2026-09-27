@@ -1,0 +1,1 @@
+SELECT unnest(enum_range(NULL::pc_status_enum)) AS status;

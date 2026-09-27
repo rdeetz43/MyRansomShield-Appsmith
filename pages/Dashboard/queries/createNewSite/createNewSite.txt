@@ -1,0 +1,22 @@
+INSERT INTO sites (
+  site_name,
+  site_email,
+  site_phone,
+  site_contact,
+  site_address,
+  site_notes,
+  created_at,
+  msp_id,
+	site_key
+) VALUES (
+  {{inpSiteName.text}},
+  {{inpSiteEmail.text}},
+  {{inpSitePhone.text}},
+  {{inpSiteContactName.text}},
+  {{inpSiteAddress.text}},
+  {{inpSiteNotes.text}},
+  NOW(),
+  {{appsmith.store.currentMsp}},
+	gen_random_uuid()::text
+)
+RETURNING id;

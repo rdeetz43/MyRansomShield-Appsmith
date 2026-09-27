@@ -1,0 +1,1 @@
+SELECT * FROM encryption_type_lookup LIMIT 10;

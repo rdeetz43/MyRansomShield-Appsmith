@@ -1,0 +1,10 @@
+UPDATE public.machines
+SET machine_type = (
+  SELECT value FROM machine_type_lookup WHERE name = '{{ selMachineType.selectedOptionValue }}'
+),
+machine_status = (
+  SELECT value FROM machine_status_lookup WHERE name = '{{ selMachineStatus.selectedOptionValue }}'
+),
+machine_name = '{{ inpMachineName.text }}',
+machine_notes = '{{ inpMachineNotes.text }}'
+WHERE id = {{ appsmith.store.editRow.id }};

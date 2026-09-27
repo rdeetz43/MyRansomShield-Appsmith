@@ -1,0 +1,16 @@
+{{ 
+  {
+    machine: appsmith.store.editRow.id,
+    payload: {
+      type: "Myransomshield.notification",
+      msgId: "msgbox-" + Math.floor(Date.now()/1000),
+      //issuedAt: new Date().toISOString(),
+      body: {
+        title: appsmith.store.msgTitle,
+        message: appsmith.store.msgText,
+        level: "warning",
+        buttons: ["OK"]
+      }
+    }
+  }
+}}

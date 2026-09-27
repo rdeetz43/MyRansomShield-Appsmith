@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68d7f5ff81513956a6184d15_0a981735-92dd-4e69-9937-bdb6b14b3a75",
+  "id": "Dashboard_jsGetConnectedMachines",
+  "unpublishedCollection": {
+    "name": "jsGetConnectedMachines",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

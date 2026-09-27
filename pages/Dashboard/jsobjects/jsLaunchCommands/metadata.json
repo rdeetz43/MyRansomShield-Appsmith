@@ -1,0 +1,32 @@
+{
+  "gitSyncId": "68d7f5ff81513956a6184d15_c7f48398-fe80-455a-9939-9ef704f80331",
+  "id": "Dashboard_jsLaunchCommands",
+  "unpublishedCollection": {
+    "name": "jsLaunchCommands",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "logPollHandle",
+        "value": "null"
+      },
+      {
+        "name": "devicePollHandle",
+        "value": "null"
+      },
+      {
+        "name": "cleanPollHandle",
+        "value": "null"
+      },
+      {
+        "name": "updatePollHandle",
+        "value": "null"
+      },
+      {
+        "name": "backupPollHandle",
+        "value": "null"
+      }
+    ]
+  }
+}

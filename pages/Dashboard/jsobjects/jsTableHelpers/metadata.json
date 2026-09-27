@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "68d7f5ff81513956a6184d15_29860f0e-f11f-43b7-8b5f-5ac45607481a",
+  "id": "Dashboard_jsTableHelpers",
+  "unpublishedCollection": {
+    "name": "jsTableHelpers",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "fieldMap",
+        "value": "{\n  msps: [\"Onboarding Date\"],\n  sites: [\"Create Date\"],\n  machines: [\"Last Backup\", \"Create Date\"]\n}"
+      },
+      {
+        "name": "columnOrderMap",
+        "value": "{\n  msps: [\"MSP Name\", \"Contact Name\", \"Email\", \"Phone\", \"Address\", \"Onboarding Date\", \"Latest Version\", \"Update Path\", \"Notes\", \"Status\", \"MSP ID\", \"id\"],\n  sites: [\"Site Name\", \"Address\", \"Contact Name\", \"Email\", \"Phone\", \"Site Key\", \"Notes\", \"Create Date\", \"id\"],\n  machines: [\"PC Name\", \"Up\", \"Site Name\", \"Last Backup\", \"Type\", \"Software Version\", \"Latest Version\", \"Software Status\", \"Create Date\", \"Notes\", \"Machine Key\", \"id\"]\n}"
+      }
+    ]
+  }
+}

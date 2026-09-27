@@ -1,0 +1,3 @@
+UPDATE public.machines
+SET software_version = {{appsmith.store.softwareVersion}}
+WHERE id = {{ appsmith.store.editRow.id }};

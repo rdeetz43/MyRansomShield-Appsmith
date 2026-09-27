@@ -1,0 +1,3 @@
+SELECT msp_name
+FROM msps
+WHERE id = {{appsmith.store.currentMsp}};

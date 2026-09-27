@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 53,
+  "bottomRowBeforeCollapse": 56,
+  "boxShadow": "none",
+  "defaultText": "{{ `It's been X days since your last backup.\nWould you like to launch a backup now?` }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{ appsmith.store.isAdminOrSubscriber }}",
+  "key": "tdemo5o8po",
+  "label": "",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextSize": "1rem",
+  "labelWidth": 5,
+  "leftColumn": 5,
+  "maxChars": "256",
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 34,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 27,
+  "needsErrorInfo": false,
+  "originalBottomRow": 53,
+  "originalTopRow": 38,
+  "parentColumnSpace": 26.515625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 33,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 38,
+  "topRowBeforeCollapse": 38,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "4mi2yyofok",
+  "widgetName": "inpReminderText"
+}

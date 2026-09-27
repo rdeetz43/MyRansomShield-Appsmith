@@ -1,0 +1,12 @@
+{{ 
+  {
+    machine: appsmith.store.editRow.id,
+    payload: {
+      type: "Myransomshield.updatesoftware",
+      msgId: "msgbox-" + Math.floor(Date.now()/1000),
+      body: {
+        timerDate: appsmith.store.timerDate
+      }
+    }
+  }
+}}

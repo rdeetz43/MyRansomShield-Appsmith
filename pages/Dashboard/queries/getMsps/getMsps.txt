@@ -1,0 +1,15 @@
+SELECT
+  sl.name AS "Status",
+	m.msp_name AS "MSP Name",
+	m.msp_contact_name AS "Contact Name",
+	m.msp_contact_email AS "Email",
+  m.msp_phone AS "Phone",
+  m.msp_address AS "Address",
+  m.msp_notes AS "Notes",
+  m.onboarding_date AS "Onboarding Date",
+	m.latest_version AS "Latest Version",
+	m.update_path AS "Update Path",
+	m.msp_id AS "MSP ID",
+	m.id
+FROM msps m
+LEFT JOIN msp_status_lookup sl ON m.msp_status = sl.value;

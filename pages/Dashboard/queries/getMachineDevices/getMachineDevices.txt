@@ -1,0 +1,26 @@
+SELECT 
+  d.machine_id,
+  d.interface AS "Interface",
+  d.capacitystr AS "Capacity",
+	d.model AS "Model",
+	d.driveletters AS "Drive Letters",
+	d.vhdhostcap AS "VHD Host Capacity",
+	d.bytespersector,
+	d.usedspace,
+	et.name AS "Encryption",
+	(d.connected = 1) AS "Connected",
+	d.disabledevice AS "Hidden",
+  d.backup AS "Backup",
+  d.source AS "Source",
+	d.bitlockerstring AS "BitLocker Password",
+	d.bitlockercode AS "BitLocker Passcode"
+FROM devices d
+LEFT JOIN encryption_type_lookup et ON d.encryption = et.flag
+WHERE d.machine_id = {{appsmith.store.editRow.id}}
+ORDER BY
+  CASE
+    WHEN d.source THEN 0
+    WHEN d.backup THEN 1
+    WHEN d.connected = 1 THEN 2
+    ELSE 3
+  END;

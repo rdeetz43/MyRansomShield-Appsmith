@@ -1,0 +1,3 @@
+UPDATE machines
+SET site_id = {{this.params.siteId}}
+WHERE id = {{this.params.machineId}};

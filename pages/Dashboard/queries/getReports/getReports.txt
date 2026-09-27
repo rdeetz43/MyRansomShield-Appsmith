@@ -1,0 +1,18 @@
+SELECT 
+  r.id, 
+  --r.set_guid AS "Set Guid", 
+  r.start_date AS "Start Time",
+  r.end_date AS "End Time",
+  r.file_total AS "File Total",
+  r.byte_total AS "Byte Total",
+  r.folder_total AS "Folder Total",
+  --r.file_errors AS "File Errors",
+  --r.byte_errors AS "Byte Errors",
+  --r.machine_id,
+  rs.name AS "Backup Status",
+  rt.name AS "Backup Type"
+FROM reports r  
+LEFT JOIN report_status_lookup rs ON r.backup_status = rs.value
+LEFT JOIN report_type_lookup rt ON r.backup_type = rt.value
+WHERE r.machine_id = {{this.params.id}}
+ORDER BY "Start Time" DESC;

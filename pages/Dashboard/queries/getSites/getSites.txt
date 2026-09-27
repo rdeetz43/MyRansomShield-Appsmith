@@ -1,0 +1,14 @@
+SELECT 
+  s.id, 
+  s.msp_id AS msp_code, 
+  s.site_name AS "Site Name",
+  s.site_email AS "Email",
+	s.site_address AS "Address",
+	s.site_contact AS "Contact Name",
+	s.site_phone AS "Phone",
+	s.site_notes AS "Notes",
+	s.site_key AS "Site Key",
+	s.created_at AS "Create Date"
+FROM sites s
+JOIN msps ms ON s.msp_id = ms.id
+WHERE s.msp_id = {{appsmith.store.currentMsp}};

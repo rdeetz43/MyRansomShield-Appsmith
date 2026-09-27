@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68d7f5ff81513956a6184d15_96aa58a9-bb3d-4f96-b111-5272a7b7bcd2",
+  "id": "Dashboard_jsDeleteItems",
+  "unpublishedCollection": {
+    "name": "jsDeleteItems",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

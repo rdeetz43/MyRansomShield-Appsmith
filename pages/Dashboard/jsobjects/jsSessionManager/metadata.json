@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68d7f5ff81513956a6184d15_fe902798-c8ac-4af3-a7a6-c6f63ef192a9",
+  "id": "Dashboard_jsSessionManager",
+  "unpublishedCollection": {
+    "name": "jsSessionManager",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "refreshLoopStarted",
+        "value": "false"
+      }
+    ]
+  }
+}

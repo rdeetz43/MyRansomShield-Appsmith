@@ -1,0 +1,6 @@
+{
+//  "user_id": 403,
+//  "site_id": 34
+  "user_id": {{ this.params.user_id }},
+  "site_id": {{ this.params.site_id }}
+}

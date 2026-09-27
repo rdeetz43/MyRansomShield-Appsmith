@@ -1,0 +1,8 @@
+UPDATE public.sites
+SET site_name = '{{ inpSiteName.text }}',
+    site_email = '{{ inpSiteEmail.text }}',
+    site_contact = '{{ inpSiteContactName.text }}',
+    site_phone = '{{ inpSitePhone.text }}',
+    site_address = '{{ inpSiteAddress.text }}',
+    site_notes = '{{ inpSiteNotes.text }}'
+WHERE id = {{appsmith.store.editRow.id}};

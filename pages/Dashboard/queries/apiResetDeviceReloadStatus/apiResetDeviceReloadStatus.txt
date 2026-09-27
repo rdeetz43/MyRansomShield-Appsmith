@@ -1,0 +1,4 @@
+{
+  "machine_id": {{appsmith.store.editRow.id}},
+  "devicerefresh_completed": false
+}

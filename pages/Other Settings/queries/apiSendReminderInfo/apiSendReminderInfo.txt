@@ -1,0 +1,16 @@
+{{
+  {
+    machine: "0",
+    mspId: appsmith.store.currentMsp + "",
+    payload: {
+      type: "Myransomshield.updatereminder",
+      msgId: "msgbox-" + Math.floor(Date.now()/1000),
+      body: {
+        msp: appsmith.store.currentMsp,
+        email: inpMspMgmtEmail.text,
+        days: selReminderDays.selectedOptionLabel,
+        text: inpReminderText.text
+      }
+    }
+  }
+}}

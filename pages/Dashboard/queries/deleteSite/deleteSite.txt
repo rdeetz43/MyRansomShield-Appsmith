@@ -1,0 +1,2 @@
+DELETE FROM sites
+WHERE id = {{this.params.siteId}};
