@@ -5,6 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 82,
+  "bottomRowBeforeCollapse": 82,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -35,18 +36,18 @@
     "customColumn1",
     "id",
     "Notes",
-    "Latest_Version",
     "Site_Name",
-    "PC_Name",
     "Create_Date",
+    "PC_Name",
     "Software_Version",
     "Last_Backup",
     "Machine_Key",
     "Type",
+    "Latest_Version",
     "Software_Status",
     "Up"
   ],
-  "columnUpdatedAt": 1772429802333,
+  "columnUpdatedAt": 1790649677549,
   "columnWidthMap": {
     "Activation_Code": 117,
     "Address": 187,
@@ -135,16 +136,13 @@
       "key": "isVisible"
     },
     {
-      "key": "primaryColumns.Latest_Version.computedValue"
-    },
-    {
       "key": "primaryColumns.Site_Name.computedValue"
     },
     {
-      "key": "primaryColumns.PC_Name.computedValue"
+      "key": "primaryColumns.Create_Date.computedValue"
     },
     {
-      "key": "primaryColumns.Create_Date.computedValue"
+      "key": "primaryColumns.PC_Name.computedValue"
     },
     {
       "key": "primaryColumns.Software_Version.computedValue"
@@ -157,6 +155,9 @@
     },
     {
       "key": "primaryColumns.Type.computedValue"
+    },
+    {
+      "key": "primaryColumns.Latest_Version.computedValue"
     },
     {
       "key": "primaryColumns.Software_Status.computedValue"
@@ -202,8 +203,8 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 27,
   "needsErrorInfo": false,
-  "originalBottomRow": 58,
-  "originalTopRow": 21,
+  "originalBottomRow": 82,
+  "originalTopRow": 23,
   "parentColumnSpace": 30.125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -223,7 +224,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "Create_Date",
-      "index": 5,
+      "index": 8,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -257,7 +258,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "Last_Backup",
-      "index": 7,
+      "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -325,7 +326,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "Machine_Key",
-      "index": 12,
+      "index": 11,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -393,7 +394,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "PC_Name",
-      "index": 4,
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -427,7 +428,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "Site_Name",
-      "index": 3,
+      "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -495,7 +496,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "Software_Version",
-      "index": 6,
+      "index": 5,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -529,7 +530,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "Type",
-      "index": 13,
+      "index": 12,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -563,7 +564,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "Up",
-      "index": 11,
+      "index": 1,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -664,6 +665,7 @@
   "tableData": "{{ appsmith.store.activeData }}",
   "textSize": "0.875rem",
   "topRow": 23,
+  "topRowBeforeCollapse": 23,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

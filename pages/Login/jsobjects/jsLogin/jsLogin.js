@@ -26,6 +26,6 @@ export default {
     navigateTo("Dashboard");
 
     // ✅ Optional: show welcome toast
-		showAlert(`Welcome, ${response.custom.company_name}`, "success");
+		showAlert(`Welcome3, ${response.custom.company_name}`, "success");
 	}
 }
