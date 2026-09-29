@@ -1,11 +1,6 @@
 export default {
   getTokenFromURL: async () => {
     const token = appsmith.URL.queryParams.token;
-    showAlert("Login token: " + token, "success");
-		
-		showAlert("TOKEN = " + token, "success");
-		showAlert("ALL PARAMS = " + JSON.stringify(appsmith.URL.queryParams), "success");
-		
     const lastToken = appsmith.store.lastToken;
 
     // CASE 1: Launch button with a new token
@@ -19,7 +14,6 @@ export default {
         return;
       }
 
-	    showAlert("Email: " + response.user.email, "success");
       await storeValue("user_email", response.user.email);
       await storeValue("roles", response.user.roles);
       await storeValue("custom", response.user.custom);
@@ -28,7 +22,7 @@ export default {
 			const current_msp = await getLoggedInMspId.run();
 			await storeValue("currentMsp", current_msp[0].id);
 
-			showAlert(`Welcome2, ${response.user.custom.company_name}`, "success");
+			showAlert(`Welcome, ${response.user.custom.company_name}`, "success");
 
       await jsOpenTable.showMachines(appsmith.store.isAdmin);
       return;
